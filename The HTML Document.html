@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>The HTML Document</title>
+</head>
+<body>
+
+<h1>The !DOCTYPE Declaration</h1>
+<p>Use as first line of all HTML documents. It tells your browser that it follows modern HTML stnadards.
+    It's for legacy reasons, older webpages without this declaration are handled differently.
+    It is not case sensitive, but DOCTYPE is usually CAPS, html is not</p>
+
+<h2>THE html ELEMENT</h2>
+<p>Start with the html lang tag to follow the !DOCTYPE document
+    End tag should be the final line of the document. The lang attribute lets the browser know the language</p>
+
+<h3>THE head ELEMENT</h3>
+<p>metadata, data about data
+    This data is used by the browser for information on how to display the webpage
+    Always set meta charset = utf-8 and title elements
+    The meta charset = utf-8 void element indicates character encoding used for document, set as first element inside head
+    title has start and end tag with title text between, used for browser tab text and search engines
+</p>
+
+<h4>THE body ELEMENT</h4>
+<p>Holds content of webpage visible to user
+    Many different elements used in teh body, such as h1</p>
+
+<h5>Structuring the HTML body</h5>
+<p>Learning about different HTML elements such as p, div, section, article, header, footer, h1-h6,ol,ul, and li
+
+    Also learning about HTML concepts such as Semantic HTML, block-level vs inline elements, and comments. These elements are not void elements
+</p>
+
+<h6>Some elements</h6>
+<p>div is short for division, generic container of other elements. Can hold almost anything inside the body
+    - text, images, video, even other divs.
+    Div is non-semantic, it has no inherent meaning. Most elements are semantic, it's preferable to use semantic elements.
+    Use div as a last resource when no other semantic element works
+
+    p is the paragraph element, used mainly to contain text. Displayed with top and bottom margins, and you can't nest other p elements inside eachother
+
+    section is similar to div but it's semantic, it indicates that the contents have a related subject matter, ex: movie theaters website may have a section on the homepage that lists new releases
+    Otherwise it functions like a div in that it can hold any other element, including other div and other sections, typically has a header inside it
+
+    h1-h6 stands for heading, there's 6 levels of these. Web browsers default h1 as the largest and h6 as the smallest
+    Some people use h1-h6 to resize text, but you shouldn't. Use CSS for this. Use heading elements to structure webpages content menaingfully
+    Accessibility, screenreaders look for headings to figure out parts of a webpage.
+    In general, never use HTML for styling, that's the purpose of CSS
+
+    ol, ul, and li
+    Used to create two types of lists 
+    ol is used for ordered lists 
+    ul is for unordered lists 
+    li is used along with both to define each list item
+    Example" <ol reversed start=6>
+        <li>Coconuts</li>
+        <li>Mangos</li>
+        <li>Bananas</li>
+    </ol>
+    
+    <ul>
+        <li>Coconuts</li>
+        <li>Mangos</li>
+        <li>Bananas</li>
+    </ul>
+
+    em and strong elements -
+    Give extra meaning to text.
+    em is short for emphasis, browsers will italize words
+    Used to give <em>stressed emphasis to some text</em>
+    Rule of thumb, if a screen reader should use extra verbal stress when reading certain words, use em
+
+    Example: "I <em>know</em> you did it" vs. "I know <em>you</em> did it"
+
+    strong
+    Browsers will display as <strong>bold</strong>
+
+    Use to give improtance to text, such as a warning message
+
+    i and b were used in early html, before CSS, but this is no longer recommended because you should simply use CSS for style
+    HTML is used for structure and meaning, not visual style. Use CSS for style 
+
+    < ! -- Comments -- > are texted used in HTML document that will be ignored by the browser. Helpful notes for future self or for other coders 
+    <!--poggers champion-->
+
+
+</p>
+</body>
+</html>
