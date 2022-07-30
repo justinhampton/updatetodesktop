@@ -1,6 +1,6 @@
 body{
-    background-color: #f4f4f4;
-    color: #555;
+    background-color: #333;
+    color: #66c3ff;
     font-family: Arial, Helvetica, sans-serif;
     font-size:16px;
     line-height:1.6em;
@@ -15,11 +15,11 @@ body{
 
 #main-header{
     background-color: #66c3ff;
-    color: #fff;
+    color: #333;
 }
 
 #navbar{
-    background-color: #333;
+    background-color: #66c3ff;
     color: #fff;
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 #navbar a{
-    color:#fff;
+    color:#333;
     text-decoration: none;
     font-size: 18px;
     padding-right: 15px;
@@ -48,8 +48,9 @@ body{
 }
 
 #showcase h1{
-    color: #fff;
+    color: #66c3ff;
     font-size: 50px;
+    text-shadow: 2px 2px 2px #333;
     line-height: 1.6em;
     padding-top: 30px;
 }
@@ -64,15 +65,15 @@ body{
 #sidebar{
     float:right;
     width:30%;
-    background: #333;
-    color: #fff;
+    background: #000;
+    color: #66c3ff;
     padding:10px;
     box-sizing: border-box;
 }
 
 #main-footer{
-    background: #333;
-    color: #fff;
+    background: #66c3ff;
+    color: #333;
     text-align: center;
     padding: 20px;
     margin-top:40px;
