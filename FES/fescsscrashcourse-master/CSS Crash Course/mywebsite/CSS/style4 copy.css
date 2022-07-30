@@ -48,9 +48,9 @@ body{
 }
 
 #showcase h1{
-    color: #66c3ff;
+    color: #80ccff;
     font-size: 50px;
-    text-shadow: 2px 2px 2px #333;
+    text-shadow: 3px 3px 3px #333;
     line-height: 1.6em;
     padding-top: 30px;
 }
