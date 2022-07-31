@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Dating Website</title>
+
+    body{
+    <font-family>verdana, arial, sans-serif</font-family>
+}
+
+</head>
+<h1>Enter Your Details For Our Dating Website</h1>
+<form action="https://us.central1-nucamp-producton.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Your Face</legend>
+        <div>
+            <label for="avatar">Upload Your Image</label>
+            <input type="file" id="avatar" name="avatar"/>
+        </div>
+        <p>Image Preview: <img id="preview", width="500"></p>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Your Details</legend>
+        <div>
+            <label for="fullName">Name:</label>
+            <input type="textbox" id="fullName" name="fullName" placeholder="Your full name" required/>
+         </div>
+         <div>
+            <label>Gender:</label>
+            <input type="radio" id="woman" name="gender" value=woman/>
+            <label for="woman">Woman</label>
+            <input type="radio" id="man" name="gender" value="man"/>
+            <label for="man">Man</label>
+         </div>
+         <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"/>
+         </div>
+         <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"/>
+         </div>
+         <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"/>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option>Choose a country</option>
+                <option value="Brazil">Brazil</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="Libya">Libya</option>
+                <option value="USA">USA</option>
+            </select>
+        <div>
+            <label for="salary">Salary</label>
+            <span class="range-caption">Poor</span>
+            <input type="range" id="salary" name="salary" min="0" max="100" value="50"/>
+            <span class="range-caption">Rich</span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required/>
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"/>
+         <div>
+             <label for="address">Address</label>
+             <textarea cols="40" id="address" name="address"></textarea>
+        </div>   
+            <label>Contact Methods</label>
+            <input type="checkbox" id="emailCheckbox" name="contact" value="email">
+            <label for="emailCheckbox">Email</label>
+            <input type="checkbox" id="phoneCheckbox" name="contact" value="phone">
+            <label for="phoneCheckbox">Phone</label>
+        </div>
+    </fieldset>
+    <div>
+        <input Type="submit"></inputType>
+    </div>
+</form>
+<body>
+    
+</body>
+</html>

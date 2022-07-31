@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables and Forms HTML</title>
+  </head>
+  <body>
+    In early pre-CSS HTML, tables were often used to position content. Today,
+    CSS is used to display data in a tabular format.
+
+    <h1>Table</h1>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Idoru</td>
+          <td>William Gibson</td>
+          <td>1996</td>
+        </tr>
+        <tr>
+          <td>Crash</td>
+          <td>JG Ballard</td>
+          <td>2003</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <h1>Forms</h1>
+    <p>Allow users to interact with websites to enter date</p>
+    <p>
+      Forms can be short (login, search) or long (advanced searched, more inputs
+      and options)
+    </p>
+    <p>Usually data is sent to a server, which handles and sends a response</p>
+    <p>
+      Googles web server will retrieve search results and send them back to the
+      browser, a shopping sites credit card info will try to validate a card,
+      etc
+    </p>
+    <p>
+      form is a container element, usually defines contents as a form. Input is
+      a versatile element commonly used in forms
+    </p>
+    <p>basic form</p>
+    <form>
+      <input type="text" />
+      <input type="submit" value="Go" />
+    </form>
+    <br />
+    <p>
+      in order to submit a form to a server you need a form action to send the
+      data to and a method to get or post
+    </p>
+    <p>
+      the action is a url on a server that should run a server-side script (a
+      small program) to handle the form submission
+    </p>
+    <p>
+      the method attribue is set to get or post, get to send requests to data
+      from server such as a search query, and post is to send data to a server
+      to both text and binary data such as images, any sensitive data needs to
+      be encrypted such as passwords
+    </p>
+    <form action="https://learn.nucamp.co/show_everything.php" method="post">
+      Enter your avatar name:
+      <input type="text" name="avatarName" placeholder="Avatar Name" required />
+      <input type="submit" value="Go" />
+    </form>
+    <br />
+    <h1>Input attributes</h1>
+    <p>type: text, submit, many others</p>
+    <p>
+      submit: submit button with inputs value as a button text, sends form data
+      to a url specified in the form actions attribute
+    </p>
+    <p>
+      name: required, single word, tells server what the data is. you need a
+      name otherwise the input will be ignored, always include a name with an
+      input
+    </p>
+    <p>value: default value to submit, also used for a submit button text</p>
+    <p>placeholder:</p>
+    <p>
+      required: boolean, inputs with this attribute must be given a value before
+      the form can be submitted
+    </p>
+    <p>
+      checkbox & radio. select values, checkbox can select multiple radio can
+      only select 1
+    </p>
+    <p>range: slider for a range between min and max values</p>
+    <p>color: color picker</p>
+    <p>
+      file: file upload. when you upload a file you need to add
+      enctype="multipart/formdata" to the forms start tag
+    </p>
+
+    <br />
+    <p>checkbox/radio example:</p>
+    <!--single checkbox input-->
+    <div>Delivery?<input type="checkbox" name="Delivery" /></div>
+
+    <!--Group of multiple checkbox inputs-->
+    <div>
+      Milk <input type="checkbox" name="groceries" value="milk" /> Eggs
+      <input type="checkbox" name="groceries" value="eggs" /> Bread
+      <input type="checkbox" name="groceries" value="bread" />
+    </div>
+    <!--Group of multiple radio inputs-->
+    <div>
+      Pay by Cash
+      <input type="radio" name="payment" value="cash" required /> Pay by Check
+      <input type="radio" name="payment" value="check" />
+    </div>
+
+    <h1>More form elements</h1>
+    <ul>
+      <li>
+        fieldset: gives structure to contents of a form, group sets of form
+        controls together
+      </li>
+      <li>
+        legend: gives structure to contents of a form, set a caption at the top
+        of a fieldset
+      </li>
+      <li>
+        textarea: multi-line text input form control. control visible lines with
+        rows attribute and width with cols attribute. always set name attribute,
+        can set a placeholder but not value attribute; if you want default text,
+        place between tags
+      </li>
+      <li>
+        select & option: used together to create a dropdown list. similar to ol
+        and li working together. select element contains a set of options, and
+        requires a name attribute. each option surrounds a dropdown text option,
+        each option requres a value attribute
+      </li>
+      <li>
+        label: surround a forms control caption text in a label element.
+        associate the label and form control by giving the label a for attribute
+        and the form control an id attribute, then set the values to match. that
+        way if the label is clicked or touched, the associated form control is
+        focused. example label for first name paired with input type text id
+        first name.
+      </li>
+    </ul>
+  </body>
+</html>
