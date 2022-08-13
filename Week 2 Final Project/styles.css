@@ -1188,7 +1188,7 @@ button {
   display: flex;
 }
 
-/* I'm not sure how I've completed this but I did  */
+/*smaller devices*/
 
 @media (max-width: 768px) {
   .about--us--header {
