@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Crash Course Overview</h1>
+    <button onclick="toggleDarkMode()">Click Me</button>
+    <ul>
+        <li>Data Types & Variables</li>
+        <li>Conditionals</li>
+        <li>Loops</li>
+        <li>Functions</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+        <li>DOM</li>
+    </ul>
+    
+<h2>Data Types & Variables</h2>
+<p>Data types help us organize data</p>
+<ul>
+    <li>String (text) - inside quotes, any character, text numbers emojis etc, can be added together with separate quotes and + ex: 'hello' + 'world'. String indexing starts from 0, 1, 2, etc. 'Justin'[0] will locate the first character of the string</li>
+    <li>Number (just a number)</li>
+    <li>Boolean (true or false)</li>
+    <li>Undefined (nothing, value was never set)</li>
+    <li>Null (value of nothing, specifically set)</li>
+</ul>
+
+<p>Variables</p>
+<ul>
+    <li>Store data</li>
+    <li>var (outdated, old code), let (usable everywhere, can use to define your variables let fullName = 'Justin Hampton', use camelCase), and const (almost the same as let but you can't reassign like you can with let, const is a global constant that you can't change. think of it like ID, you only want to use it once for something that wont be changing.</li>
+</ul>
+
+F = C x 1.8 + 32
+<p>let celsius = 10;</p>
+<p>let fahrenheit = celsius * 1.8 + 32;</p>
+<p>console.log(fahrenheit) (end result = 50)</p>
+
+Equality
+<p>== and ===</p>
+<ul>
+    <li>== double equals checks the values</li>
+    <li>=== triple equals checks the type and the values</li>
+    <li>the opposite is to add a !, so !== and !=== because the ! means 'not'</li>
+</ul>
+
+<h2>Conditionals</h2>
+<p>You can have an if without an else, but you can't have an else without an if</p>
+<ul>
+    <li>== equal values</li>
+    <li>=== equal values and types</li>
+    <li>!= not equal</li>
+    <li>!== not equal value and equal type</li>
+    <li>> greater than</li>
+    <li>< less than</li>
+    <li>>= greater than or equal to</li>
+    <li><= less than or equal to</li>
+</ul>
+
+<p>Logical Operators</p>
+<ul>
+    <li>&& and checks if the left and the right side are true.</li>
+    <ul><li>true && true -> true</li>
+        <li>true && false -> false</li>
+        <li>false && true -> false</li>
+        <li>false && false -> false</li>
+    </ul>
+    <li>|| checks if the left or right side is true</li>
+    <ul><li>true || true -> true</li>
+    <li>true || false -> true</li>
+    <li>false || true -> true</li>
+    <li>false || false -> false</li>
+    </ul>
+</ul>
+<p>Falsy values, considered false when converted to a boolean</p>
+<ul>
+    <li>undefined</li>
+    <li>null</li>
+    <li>NaN</li>
+    <li>0</li>
+    <li>""</li>
+    <li>false</li>
+</ul>
+<p>Truthy values, considered true when converted to boolean</p>
+<ul>
+    <li>letters, numbers, all strings</li>
+    <li>empty arrays</li>
+    <li>objects</li>
+</ul>
+<p>for an if statement to run it needs to be truthy. !!"x" in the console will let you know if it's truthy or falsy</p>
+
+<p>Ternary Operators, shortcut for an if else condition</p>
+<p>isObese ? 'unhealthy' : 'healthy'</p>
+<p>subscried ? 'show video' : 'hide video'</p>
+
+<h2>Loops</h2>
+<p>Used to repeat code, until given a condition to stop: example, counting to 100.</p>
+<p>for loop, while loop, do while loop</p>
+
+<h2>Functions</h2>
+<p>Block of code designed to perform a particular task (code that does something)</p>
+<p></p>
+
+<h2>Arrays</h2>
+<p>Data structure that can hold multiple data values in one variable. Use [] for array</p>
+<p>Can put different types, string boolean etc, but usually only one</p>
+<p>.push adds to the end of an array list</p>
+<p>filter runs through each element and calls back a new array</p>
+
+<h2>Objects</h2>
+<p>Objects are used to store multiple properties in one variable. {}</p>
+
+<h2>DOM</h2>
+Document Object Model
+<p>Change the styling and content of elements on your website</p>
+
+<h1 id=title>Justin Hampton</h1>
+
+</body>
+</html>
