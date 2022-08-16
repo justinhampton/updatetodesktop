@@ -100,10 +100,33 @@ console.log(calcRemainder(9, 8))
 
 // Question 11 Is the number odd?
 
-// Guveb two numbers, return true if the number is odd
+// Given two numbers, return true if the number is odd
 
 function isOdd(num) {
     return num % 2 !== 0;
 }
 
 console.log(isOdd(1))
+
+// Question 12 If a number is even, return 1 otherwise return -1
+
+// Create a function that takes a number argument and returns 1 if the number is even. If the number is odd return -1
+
+function booleanInteger(num) {
+   return num % 2 === 0 ? 1 : -1;
+}
+
+console.log(booleanInteger(1))
+
+// Question 13 Check if a user is logged in and subscribed
+
+// Create a function that take in two strings. If the first string is equal to 'LOGGED_IN' and the second string is equal to subscribed return true, otherwise return false
+
+function isLoggedInAndSubscribed(loggedIn, subscribed){
+    return (loggedIn === 'LOGGED_IN') && (subscribed === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+
+// Question 14 is the same as the above but it's "or" instead of "and". Chance && to ||
+
