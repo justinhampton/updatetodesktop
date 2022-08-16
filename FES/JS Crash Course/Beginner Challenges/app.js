@@ -129,4 +129,3 @@ function isLoggedInAndSubscribed(loggedIn, subscribed){
 console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
 
 // Question 14 is the same as the above but it's "or" instead of "and". Chance && to ||
-
