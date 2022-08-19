@@ -1,0 +1,15 @@
+img {
+    position: absolute;
+}
+
+div {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+}
+
+#leftSide {
+    left: 500px;
+    border-left: 1px solid;
+}
+
