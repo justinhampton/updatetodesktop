@@ -8,8 +8,7 @@ div {
     width: 500px;
 }
 
-#leftSide {
+#rightSide {
     left: 500px;
     border-left: 1px solid;
 }
-
