@@ -93,3 +93,51 @@ function reverseString(str) {
 }
 
 console.log(reverseString('abc'))
+
+// Q9 Turn every element in an array into 0
+
+// Given an array of elements, return the same length array filled with 0's
+
+// function convertToZeros(arr) {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; ++i) {
+//         newArr[i] = 0
+//     }
+//     return newArr;    
+// }
+
+// function convertToZeros(arr) {
+//     return new Array(arr.length).fill(0);
+// }
+
+// function convertToZeros(arr) {
+//     return new Array(arr.length).fill(0);
+// }
+
+function convertToZeros(arr) {
+    return arr.map(elem => 0);
+}
+
+console.log(convertToZeros([5, 100, 2, 1, 5]));
+
+// Q10 Filter out alll the apples
+
+// Given an array of fruits, if it is an apple remove it from the array
+
+// function removeApples(arr) {
+//     let noApples = []
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] !== 'Apple') {
+//             noApples.push(arr[i])
+//         } 
+//     }
+//     return noApples;
+// }
+
+function removeApples(arr) {
+    return arr.filter(elem => elem !== 'Apple')
+}
+
+console.log(removeApples(['Banana', 'Apple', 'Orange']))
+
+// Q11 
