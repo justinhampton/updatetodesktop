@@ -499,6 +499,10 @@ footer {
     text-align: center;
   }
 
+  .project__description--link {
+    padding-left: 16px;
+  }
+
   .project__description--sub-title {
     text-align: center;
     margin: 12px 0 12px;
