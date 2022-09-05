@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: deepskyblue;
+}
+
+.nav__logo {
+    width: 300px;
+    padding-left: 6px;
+}
+
+.main {
+    max-width: 1200px;
+    padding: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav__link {
+    padding-right: 12px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+header {
+    background-color: #eadcff;
+    height:calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    
+}
+
+.subheader {
+    font-size: 16px;
+}
